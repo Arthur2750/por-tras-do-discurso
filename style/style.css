@@ -12,11 +12,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
 }
 :root{
- --cor-principal: #0A2540;
+ --cor-principal: #004aad;
  --cor-secundaria: #F5B800;
- --cor-fundo: #f4f6f8;
+ --cor-fundo: #eceae4;
  --cor-borda-card: rgb(233, 212, 212);
  --cor-texto: #1a202c;
  --cor-branca: #ffffff; 
@@ -26,7 +28,7 @@
 --font-inter: 'inter';
 }
 body.dark-mode {
-  --cor-fundo: #0f172a;
+  --cor-fundo: #061C2E;
   --cor-fundo-card: #1e293b;
   --cor-texto: #f8fafc;
   --cor-borda-card: #334155;
@@ -39,12 +41,48 @@ body{
     height: 100%;
     padding-bottom: 50px;
 }
+header{
+    background-color: var(--cor-principal);
+    padding: 10px;
+    color: var(--cor-branca);
+    font-size: 20px;
+    height: 57px;
+}
+header > h1 {
+    font-size: 25px;
+    margin-left: 40px;
+}
+p{
+    font-family: var(--font-inter);
+    font-size: 17px;
+    color: var(--cor-texto);
+    margin: 20px;
+    text-align: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+div{
+    border: 1px solid var(--cor-fundo);
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
 .abr{
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    background-color: rgba(245, 184, 0, 0.548);
-    font-family: var(--font-soDosans);
+    font-family: times new roman;
+}
+.ab{
+    color: var(--cor-principal);
+    text-align: center;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: times new roman;
+    max-width: none;
 }
 .banner{
     width: 100%;
@@ -69,20 +107,6 @@ body{
     filter: sepia(100%) saturate(250%) hue-rotate(-20deg);
     opacity: 0.9;
 }
-header{
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--cor-principal);
-    padding: 15px;
-    color: var(--cor-branca);
-    font-size: 20px;
-    height: 70px;
-}
-header > h1 {
-    font-size: 35px;
-    margin-left: 25px;
-}
 .pc{
     display: flex;
     gap: 2px;
@@ -96,6 +120,7 @@ header > h1 {
     color: var(--cor-branca);
     border-radius: 8px;
     padding: 10px;
+    margin-top: 5px;
     transition: 'background' 0.5s;
 }
 .linkpc:hover{
@@ -145,10 +170,16 @@ main{
     margin: 10px;
     padding: 20px;
     background-color: var(--cor-fundo);
-    border: 2px solid var(--cor-borda-card);
-    border-left: 5px solid var(--cor-secundaria);
-    border-radius: 10px;
-   
+}
+.por{
+    color: var(--cor-principal);
+    font-size: 40px;
+}
+.titpr{
+    color: var(--cor-texto);
+    text-align: center;
+    margin: 15px;
+    font-size: 40px;
 }
 .btn-deputado{
     margin: 20px;
@@ -163,9 +194,23 @@ main{
     cursor: pointer;
     transition: "backgroundcolor" 0.3s ease;
 }
+.btndark{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 'backgroundcolor' 0.3s ease ;
+}
+.btndark:hover{
+    background-color: #106dca;
+}
 button#btn-deputado{
     display: block;
     margin-left: auto;
+    
 }
 .btn-deputado:hover {
     background-color: var(--cor-de-transitação);
@@ -180,5 +225,5 @@ button#btn-avança{
 }
 .btn{
     display: flex;
-    te
+    
 }

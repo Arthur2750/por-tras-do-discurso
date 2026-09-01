@@ -18,5 +18,16 @@
     window.location.href = 'index2.html'
     });
 }
+let darkmode = false;
+    function dark() {
+        const icone = document.getElementById("icone");
+        if (icone.src.includes("brilho-do-sol")) {
+            icone.src = "../imagem/forma-de-meia-lua20x20.png";
+            darkmode = true;
+        } else {
+            icone.src = "../imagem/brilho-do-sol20x20.png";
+            darkmode = false;
+        }  
+    }
 
     
