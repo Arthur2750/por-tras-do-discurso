@@ -18,7 +18,12 @@
     window.location.href = 'index2.html'
     });
 }
-let darkmode = false;
+        const btndark = document.getElementById("btn-dark");
+    if (btndark){ btndark.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
+}
+    let darkmode = false;
     function dark() {
         const icone = document.getElementById("icone");
         if (icone.src.includes("brilho-do-sol")) {
