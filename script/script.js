@@ -34,5 +34,16 @@
             darkmode = false;
         }  
     }
+function abrirModal(id) {
+    document.getElementById(id).style.display = "flex";
+}
 
-    
+function fecharModal(id) {
+    document.getElementById(id).style.display = "none";
+}
+document.getElementById('estado').addEventListener('click', () => {
+    abrirModal('modalestado');
+});
+document.getElementById('governo').addEventListener('click', () => {
+    abrirModal('modalgoverno');
+});

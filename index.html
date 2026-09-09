@@ -11,13 +11,15 @@
 <body>
     <header class="titulo da pagina" >
         <h1>Por Tras do Discurso</h1>
-        <div class="cab"><button class="btndark" id="btn-dark" onclick="dark()">
-            <img id="icone" src="../imagem/brilho-do-sol20x20.png" alt="foto do sol"></button>
+        <div class="cab">
         <nav class="pc">
             <a href="index.html" class="linkpc">Inicio</a>
             <a href="index2.html" class="linkpc">Deputados</a>
             <a href="index3.html" class="linkpc">Sobre</a>
-        </nav></div>
+        </nav>
+        <button class="btndark" id="btn-dark" onclick="dark()">
+            <img id="icone" src="../imagem/brilho-do-sol20x20.png" alt="foto do sol"></button>
+        </div>
     </header>
     <main>
         <section>
@@ -26,13 +28,76 @@
     </section>
     <section>
         <div><h2 class="titpr">O que é politica?</h2>
-        <p>Muitas pessoas pensam que política é algo distante da sua realidade, mas ela está presente em praticamente tudo ao nosso redor. A qualidade das escolas, dos hospitais, do transporte público, da segurança e até mesmo do acesso à internet depende de decisões  tomadas por representantes eleitos.</p>
+        <p>Muitas pessoas pensam que a política é algo distante da sua realidade. No entanto, ela está presente em praticamente tudo ao nosso redor. A qualidade das escolas, dos hospitais, do transporte público, da segurança e até mesmo do acesso à internet depende de decisões tomadas por representantes eleitos. Por isso, compreender como funciona o sistema político brasileiro é uma forma de entender quem cria as leis, quem administra o país e quem fiscaliza essas ações.</p>
 
-         <button id="btn-deputado" class="btn-deputado"
-            onclick="lista()">Aperte aqui</button> 
-        </div>
+        <h2>Como funciona o sistema político brasileiro?</h2>
+        <p>O Brasil adota o modelo de República Federativa Presidencialista.
+        <br>
+        - República: O chefe de Estado é escolhido pelo voto da população e permanece no cargo por um período determinado, não existindo monarquia hereditária.
+        <br>
+        - Federativa: O país é dividido em estados e municípios que possuem certa autonomia para administrar questões locais.
+        <br>
+        - Presidencialista: O Presidente da República é o chefe de <span class="tooltip" id="estado">Estado<span class="tooltip-text">representa o Brasil internacionalmente, participa de negociações e mantém relações diplomáticas com outros países.</span></span> e de <span class="tooltip" id="governo">Governo<span class="tooltip-text">administra o país, escolhe ministros e define políticas públicas.</span></span>, sendo eleito diretamente pelo povo para um mandato de quatro anos, com possibilidade de reeleição para mais quatro anos.</p>
+        <p>A divisão dos poderes
+        Para evitar a concentração de poder em apenas uma pessoa ou instituição, o filósofo Charles de Montesquieu propôs a divisão dos poderes do Estado.
+        No Brasil, existem três poderes que atuam de forma independente e equilibrada:
+        <ul class="poder">
+
+            <li><strong>Poder Executivo</strong></li>
+        
+        Sua função principal é administrar o país e gerir as políticas públicas, aplicando as leis criadas pelo Legislativo na prática do dia a dia.
+        O executivo variar de acordo a espaço, sendo assim na União, é chefiado pelo Presidente da República; nos Estados, pelos Governadores; e nos Municípios, pelos Prefeitos.
+        <p>Função Típica:</p>
+        <ul>
+            <li>Coletar impostos e gerir o orçamento público.</li>
+            <li>Executar políticas sociais e infraestrutura (construir escolas, manter hospitais, gerenciar a segurança pública).</li>
+            <li>Representa o país nas relações internacionais.</li>
+        </ul>
+        <p>Mecanismos de Controle (Checks and Balances): O Executivo tem o poder de vetar projetos de lei aprovados pelo Congresso Nacional se os considerar inconstitucionais ou contrários ao interesse público.</p>
+        
+        <li><strong>Poder Legislativo</strong></li>
+
+         <span class="podertext">Vamos buscar um fundamento no Congresso (Legislativo), como já tratado ele composto pela câmara de deputados e senadores sendo bicameral, tendo a função de legislar e fiscalizar.</span> <br>
+            
+         <p>Função Típica (Administrativa):</p>
+         <ul>
+        <li><span class="podertext">
+        Função legislar:</span> A parte de legislar é mais conhecida, sendo criação de leis ou normas para organização do país.</li>  <br>
+
+        <li><span class="podertext">Função de fiscalizar:</span> Conforme o <a href="https://www.jusbrasil.com.br/topicos/10705465/inciso-x-do-artigo-49-da-constituicao-federal-de-1988" target="_blank" class="link">art.49,</a>  da Constituição Federal, o Senado Federal, como componente do Congresso Nacional, tem a competência de fiscalizar e controlar os atos do Poder Executivo. Além disso, o Congresso Nacional deve realizar a fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta. No cumprimento dessa função, o Congresso Nacional conta ainda com o apoio do Tribunal de Contas da União. </li> </ul>
+
+
+        <li><strong>Poder Judiciário</strong></li>
+        <span class="podertext">
+        O STF </span> é o órgão máximo do Poder Judiciário e tem como principal função garantir o cumprimento da Constituição Federal. É formado por 11 ministros, indicados pelo Presidente da República e aprovados pela maioria absoluta do Senado. Os ministros devem ser brasileiros natos, ter entre 35 e 70 anos, 
+        <p>Função Típica (Jurisdicional):</p>
+        <ul>
+        <li>Resolver disputas entre cidadãos, entre cidadãos e o Estado, e entre o próprio Estado.</li>
+        <li>Garantir o cumprimento dos direitos fundamentais previstos na Constituição.</li>
+        <li>Fazer o controle de constitucionalidade: verificar se as leis criadas pelo Congresso ou os atos editados pelo Executivo respeitam a Constituição Federal.</li>
+        <li>Independência: Juízes têm garantias constitucionais (como a vitaliciedade) para julgar com imparcialidade, sem sofrer pressões políticas.</li>
+        </ul>    
+    </ul></p>
     </section> 
     </main>
+    </div>
+    <section>
+        <div id="modalestado" class="modal">
+        <div class="modal-content">
+        <h3>Chefe de Estado</h3>
+        <p>representa o Brasil internacionalmente, participa de negociações e mantém relações diplomáticas com outros países.</p>
+        <button class="btn-deputado" onclick="fecharModal('modalestado')">Fechar</button>
+        </div>
+        </div>
+        <div id="modalgoverno" class="modal">
+            <div class="modal-content">
+            <h3>Chefe de Governo</h3>
+            <p>administra o país, escolhe ministros e define políticas públicas.</p>
+            <button class="btn-deputado" onclick="fecharModal('modalgoverno')">Fechar</button>
+            </div>
+            </div>
+    </section>
+
        <nav class="menu">
         <a href="index.html" class="linkmobile">
             <span><img src="imagem/web-house30x30.png"alt="foto de casa"></span> <br>

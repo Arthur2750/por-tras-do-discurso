@@ -72,6 +72,50 @@ div{
     width: 1000px;
     text-align: center;
 }
+ul{
+    font-family: var(--font-inter);
+    font-size: 17px;
+    color: var(--cor-texto);
+    margin: 20px;
+    text-align: center;
+    text-align: justify;
+    max-width: 1000px;
+    padding-left: 50px;
+}
+.tooltip {
+    position: relative;
+    color: var(--cor-principal);
+    font-weight: 600;
+    cursor: pointer;
+}
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 300px;
+    max-width: 300px;
+    padding: 12px;
+
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #F5B800;
+    border-radius: 10px;
+
+    font-size: 0.9rem;
+    text-align: left;
+
+    transition: 0.3s;
+    z-index: 100;
+}
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
 .abr{
     color: var(--cor-texto);
     font-weight: bold;
@@ -232,4 +276,40 @@ button#btn-avança{
 .btn{
     display: flex;
     
+}
+@media (min-width: 768px){
+#estado {
+    color: var(--cor-principal);
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+} }
+.poder{
+    padding: 0px;
+    margin: 20px;
+    list-style-type: none;
+}
+.podertext{
+    margin: 8px;
+}
+.link{
+    color: var(--cor-secundaria);
+    text-decoration: none;
 }
