@@ -121,9 +121,16 @@ ul{
     transition: 0.3s;
     z-index: 100;
 }
-.tooltip:hover .tooltip-text {
+.tooltip:hover .tooltip-text{
     visibility: visible;
     opacity: 1;
+}
+.tooltip-text{
+    max-width: 500%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: underline dotted;
+    text-underline-offset: 3px;
 }
 .abr{
     color: var(--cor-texto);
