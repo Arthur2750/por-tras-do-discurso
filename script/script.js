@@ -34,16 +34,31 @@
             darkmode = false;
         }  
     }
+document.addEventListener("DOMContentLoaded", () => {       const modais = document.querySelectorAll('.modal');
+  modais.forEach(modal => document.body.appendChild(modal));
+element.addEventListener('click', (e) => {
+  e.preventDefault();
+  abrirModal('modalestado');
+});
+
+  const btnEstado = document.getElementById('estado');
+  const btnGoverno = document.getElementById('governo');
+
+  if (btnEstado) {
+    btnEstado.addEventListener('click', () => abrirModal('modalestado'));
+  }
+
+  if (btnGoverno) {
+    btnGoverno.addEventListener('click', () => abrirModal('modalgoverno'));
+  }
+});
+
 function abrirModal(id) {
-    document.getElementById(id).style.display = "flex";
+  const modal = document.getElementById(id);
+  if (modal) modal.style.display = "flex";
 }
 
 function fecharModal(id) {
-    document.getElementById(id).style.display = "none";
+  const modal = document.getElementById(id);
+  if (modal) modal.style.display = "none";
 }
-document.getElementById('estado').addEventListener('click', () => {
-    abrirModal('modalestado');
-});
-document.getElementById('governo').addEventListener('click', () => {
-    abrirModal('modalgoverno');
-});
