@@ -8,6 +8,10 @@
     src: url(../sodo-sans/SoDoSans-Regular.ttf);
 
 }
+@font-face {
+    font-family: alfa;
+    src: url(../Alfa_Slab_One\,Fraunces\,Inter\,Playwrite_NZ_Guides/Alfa_Slab_One/Alfa_Slab_One-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +30,7 @@
 
 --font-soDosans: 'soDosans';
 --font-inter: 'inter';
+--font-alfa: 'alfa';
 }
 body.dark-mode {
   --cor-fundo: #061C2E;
@@ -47,6 +52,7 @@ header{
     position: sticky;
     z-index: 1000;
     top: 0;
+    margin: 0;
     background-color: var(--cor-principal);
     padding: 10px;
     color: var(--cor-branca);
@@ -67,14 +73,6 @@ p{
     max-width: 100%;
     word-wrap: break-word;
 }
-div{
-    border: 1px solid var(--cor-fundo);
-    border-radius: 8px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    width: 1000px;
-    text-align: center;
-}
 ul{
     font-family: var(--font-inter);
     font-size: 17px;
@@ -88,6 +86,61 @@ ul{
     text-align: center;
     text-align: justify;
     padding-left: 50px;
+}
+.logo{
+    width: 100%;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #76ADE2;
+    border-radius: 0;
+    border: 0;
+}
+.logo img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.noticias{
+    width: 100%;
+    margin-top: 30px;
+}
+.noticias img{
+    width: 400px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.noticia{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: black;
+}
+.textnoticia{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+.textnoticia h3 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    font-family: var(--font-alfa);
+    color: var(--cor-principal);
+}
+.textnoticia p {
+    margin: 0 0 15px 0;
+    font-size: 22px;
+    text-align: left;
+    font-family: var(--font-alfa);
+    color: var(--cor-texto);
 }
 .tooltip {
     position: relative;
@@ -224,8 +277,20 @@ main{
     max-width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
-    padding: 20px;
     background-color: var(--cor-fundo);
+}
+.orgpa{
+    border: 1px solid var(--cor-fundo);
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
+.orgpa1{
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
 }
 .por{
     color: var(--cor-principal);
