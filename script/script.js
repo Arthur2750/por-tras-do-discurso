@@ -27,38 +27,11 @@
     function dark() {
         const icone = document.getElementById("icone");
         if (icone.src.includes("brilho-do-sol")) {
-            icone.src = "../imagem/forma-de-meia-lua20x20.png";
+            icone.src = "imagem/forma-de-meia-lua20x20.png";
             darkmode = true;
         } else {
-            icone.src = "../imagem/brilho-do-sol20x20.png";
+            icone.src = "imagem/brilho-do-sol20x20.png";
             darkmode = false;
         }  
     }
-document.addEventListener("DOMContentLoaded", () => {       const modais = document.querySelectorAll('.modal');
-  modais.forEach(modal => document.body.appendChild(modal));
-element.addEventListener('click', (e) => {
-  e.preventDefault();
-  abrirModal('modalestado');
-});
 
-  const btnEstado = document.getElementById('estado');
-  const btnGoverno = document.getElementById('governo');
-
-  if (btnEstado) {
-    btnEstado.addEventListener('click', () => abrirModal('modalestado'));
-  }
-
-  if (btnGoverno) {
-    btnGoverno.addEventListener('click', () => abrirModal('modalgoverno'));
-  }
-});
-
-function abrirModal(id) {
-  const modal = document.getElementById(id);
-  if (modal) modal.style.display = "flex";
-}
-
-function fecharModal(id) {
-  const modal = document.getElementById(id);
-  if (modal) modal.style.display = "none";
-}
