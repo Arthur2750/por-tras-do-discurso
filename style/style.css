@@ -44,8 +44,10 @@ body{
     padding: 0;
     width: 100%;
     max-width: 100%;
-    min-height: 100vh;
     overflow-x: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 header{
     position: sticky;
@@ -277,7 +279,10 @@ main{
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: var(--cor-fundo);
-    margin-bottom: 20px;
+    margin-bottom: 20px;;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
 .orgpa{
     border: 1px solid var(--cor-fundo);
@@ -434,4 +439,108 @@ main{
 .rodape-final p {
     color: white;
     margin: 0;
+}
+.setas {
+    width: 70px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    margin-right: 20px;
+}
+.candidatos{
+    width: 90%;
+    max-width: 900px;
+    min-height: 430px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.candidatos h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+}
+.introducao {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+.galeria-deputados {
+    display: grid;
+    grid-template-columns: repeat(4, 130px);
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin: 25px 0 35px;
+}
+.deputado {
+    display: block;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    color: #104b91;
+}
+.deputado img {
+    display: block;
+    width: 130px;
+    height: 200px;
+    object-fit: cover;
+    border: none;
+}
+.deputado span {
+    display: block;
+    padding: 9px 2px;
+    border-bottom: 2px solid #104b91;
+    font-weight: bold;
+}
+.deputado:hover img {
+    opacity: 0.8;
+}
+.deputado:hover span {
+    color: #0a2e59;
+    border-bottom-color: #f5b800;
+}
+
+.deputado:focus-visible {
+    outline: 2px solid #104b91;
+    outline-offset: 4px;
+}
+.conteudo-pesquisa h3 {
+    margin-top: 0;
+    color: #104b91;
+    font-family: Georgia, serif;
+}
+@media (max-width: 650px) {
+    .galeria-deputados {
+        grid-template-columns: repeat(2, 130px);
+        column-gap: 18px;
+    }
+}
+@media (max-width: 500px) {
+
+    .candidatos {
+        padding: 12px;
+    }
+
+    .galeria-deputados {
+        gap: 18px;
+    }
+
+    .deputado {
+        width: 105px;
+    }
+
+    .deputado img {
+        height: 105px;
+    }
+
+    .deputado span {
+        font-size: 12px;
+    }
+
+    .conteudo-pesquisa {
+        padding: 14px;
+    }
 }

@@ -5,55 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Por Tras do Discurso</title>
     <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="index" href="index2.html">
 </head>
 <body>
     <header class="titulo da pagina" >
         <h1>Por Tras do Discurso</h1>
-        <div class="cab"><nav class="pc">
+        <div class="cab">
+        <nav class="pc">
             <a href="index.html" class="linkpc">Inicio</a>
-            <a href="index4.html" class="linkpc">Sistema Político</a>
-            <a href="index2.html" class="linkpc">Deputados</a>
-            <a href="index3.html" class="linkpc">Sobre</a>
+            <a href="index2.html" class="linkpc">Sistema Político</a>
+            <a href="index3.html" class="linkpc">Deputados</a>
         </nav>
         <button class="btndark" id="btn-dark" onclick="dark()">
-            <img id="icone" src="../imagem/brilho-do-sol20x20.png" alt="foto do sol"></button></div>
+            <img id="icone" src="../imagem/brilho-do-sol20x20.png" alt="foto do sol"></button>
+        </div>
     </header>
     <main>
-        <div class="orgpa">
-            <h1 class="titpr">Deputados</h1>
-            <p>O tema de nossa pesquisa é sobre a área legislativa, mais especificamente sobre os deputados. Como o projeto será executado em São Paulo, nosso foco será nos deputados estaduais de São Paulo.</p>
+    <div class="orgpa">
+<section>
+    <h1 class="titpr">O que é política?</h1>
 
-            <p>Antes de começarmos a falar sobre os deputados estaduais, precisamos entender alguns termos e etapas relacionados ao Poder Legislativo. </p>
+    <p>
+        Muitas pessoas pensam que a política é algo distante da sua realidade. No entanto, ela está presente em praticamente tudo ao nosso redor. A qualidade das escolas, dos hospitais, do transporte público, da segurança e até mesmo do acesso à internet depende de decisões tomadas por representantes eleitos. Por isso, compreender como funciona o sistema político brasileiro é uma forma de entender quem cria as leis, quem administra o país e quem fiscaliza essas ações.
+    </p>
 
-            <p><strong>Plenário:</strong> é o espaço onde os parlamentares de uma casa legislativa se reúnem para discutir e votar propostas. É formado pela reunião dos membros daquela instituição.</p>
+    <h2>Como funciona o sistema político brasileiro?</h2>
 
-            <p><strong>PL (Projeto de lei):</strong> É uma proposta escrita apresentada por parlamentares (vereadores, deputados ou senadores) ou pelo chefe do Executivo para criar uma nova lei ou alterar uma lei que já existe.</p>
+    <p>
+        O Brasil adota o modelo de República Federativa Presidencialista.
+    </p>
 
-            <p><strong>PEC:</strong> PEC significa Proposta de Emenda à Constituição, um projeto usado para mudar o texto da Constituição Federal. </p>
+    <p>
+        - <strong>República:</strong> o chefe de Estado é escolhido pelo voto da população e permanece no cargo por um período determinado, não existindo uma monarquia hereditária.
+        <br>
+        - <strong>Federativa:</strong> o país é dividido em estados e municípios, que possuem certa autonomia para administrar questões locais.
+        <br>
+        - <strong>Presidencialista:</strong> o Presidente da República é o chefe de 
+        <span class="tooltip" id="estado">
+            Estado
+            <span class="tooltip-text">
+                Representa o Brasil internacionalmente, participa de negociações e mantém relações diplomáticas com outros países.
+            </span>
+        </span>
+        e de 
+        <span class="tooltip" id="governo">
+            Governo
+            <span class="tooltip-text">
+                Administra o país, escolhe ministros e define políticas públicas.
+            </span>
+        </span>,
+        sendo eleito diretamente pelo povo para um mandato de quatro anos, com possibilidade de uma reeleição por mais quatro anos.
+    </p>
 
-            <p><strong>PLP:</strong> Projeto de lei complementar é uma proposta utilizada para regulamentar assuntos que a Constituição determina que sejam tratados por uma lei complementar. Diferentemente de um Projeto de Lei comum, sua aprovação exige um número de votos específico, definido pelas regras aplicáveis à casa legislativa.  </p>
+    <h2>A divisão dos poderes</h2>
 
-            <p><strong>PDL (Projeto de Decreto Legislativo):</strong> é uma proposta usada pelos parlamentares para tomar decisões que são de competência do próprio Poder Legislativo. Por isso, não precisa da aprovação do governador ou do presidente. </p>
+    <p>
+        Para evitar a concentração de poder em apenas uma pessoa ou instituição, o filósofo Charles de Montesquieu propôs a divisão dos poderes do Estado. No Brasil, existem três poderes que atuam de forma independente e equilibrada:
+    </p>
 
-            <p><strong>Requerimento:</strong> é um instrumento formal utilizado por parlamentares (como vereadores, deputados ou senadores) para solicitar informações, propor ações ou exigir providências de órgãos públicos e do Poder Executivo.</p>
+    <ul class="poder">
 
-            <p><strong>Indicações:</strong> é um instrumento ou proposição formal utilizado por membros do Poder Legislativo (como vereadores, deputados ou senadores) para sugerir que outro órgão, geralmente o Poder Executivo (Prefeito, Governador ou Presidente), tome uma providência, realize uma obra ou adote um ato administrativo.</p>
+        <li>
+            <strong>Poder Executivo</strong>
 
-            <section class="video-politico">
-                <h2>Funcionamento do processo legislativo</h2>
+            <p>
+                Sua função principal é administrar o país e gerir as políticas públicas, aplicando as leis criadas pelo Legislativo na prática do dia a dia.
+            </p>
+
+            <p>
+                O Poder Executivo varia de acordo com a esfera de governo. Na União, é chefiado pelo Presidente da República; nos estados, pelos Governadores; e nos municípios, pelos Prefeitos.
+            </p>
+
+            <p><strong>Função típica:</strong></p>
+
+            <ul class="funções">
+                <li>Coletar impostos e gerir o orçamento público.</li>
+                <li>Executar políticas sociais e de infraestrutura, como construir escolas, manter hospitais e gerenciar a segurança pública.</li>
+                <li>Representar o país nas relações internacionais.</li>
+            </ul>
+
+            <p>
+                <strong>Mecanismos de controle (Checks and Balances):</strong>
+                o Executivo possui, entre suas atribuições, a possibilidade de vetar projetos de lei aprovados pelo Congresso Nacional, nos termos previstos pela Constituição.
+            </p>
+        </li>
+
+        <li>
+            <strong>Poder Legislativo</strong>
+
+            <p class="podertext">
+                O Poder Legislativo é exercido pelo Congresso Nacional, que é composto pela Câmara dos Deputados e pelo Senado Federal. Por ser formado por duas casas, o Congresso possui uma estrutura bicameral. Entre suas principais funções estão legislar e fiscalizar.
+            </p>
+
+            <p><strong>Funções típicas:</strong></p>
+
+            <ul class="funções">
+
+                <li>
+                    <strong>Função de legislar:</strong>
+                    consiste na elaboração e aprovação de leis e normas para a organização do país.
+                </li>
+
+                <li>
+                    <strong>Função de fiscalizar:</strong>
+                    o Congresso Nacional possui a competência de fiscalizar e controlar os atos do Poder Executivo. Além disso, realiza a fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta. No cumprimento dessa função, o Congresso Nacional conta também com o apoio do Tribunal de Contas da União.
+                </li>
+
+            </ul>
+        </li>
+
+        <li>
+            <strong>Poder Judiciário</strong>
+
+            <p>
+                O Supremo Tribunal Federal (STF) é o órgão de cúpula do Poder Judiciário e tem como principal função garantir o cumprimento da Constituição Federal. É formado por 11 ministros, indicados pelo Presidente da República e aprovados pela maioria absoluta do Senado. Os ministros devem ser brasileiros natos, ter entre 35 e 70 anos e possuir notável saber jurídico e reputação ilibada.
+            </p>
+
+            <p><strong>Função típica (jurisdicional):</strong></p>
+
+            <ul class="funções">
+
+                <li>
+                    Resolver disputas entre cidadãos, entre cidadãos e o Estado e entre os próprios órgãos do Estado.
+                </li>
+
+                <li>
+                    Garantir o cumprimento dos direitos fundamentais previstos na Constituição.
+                </li>
+
+                <li>
+                    Realizar o controle de constitucionalidade, verificando se as leis criadas pelo Congresso ou os atos editados pelo Executivo respeitam a Constituição Federal.
+                </li>
+
+                <li>
+                    <strong>Independência:</strong>
+                    os juízes possuem garantias constitucionais, como a vitaliciedade, para exercer suas funções com independência e imparcialidade.
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+    </section> 
+     <section class="video-politico">
+                <h2>Explicação e Funcionamento da Constituição Federal</h2>
                 <div class="video-container">
-            <iframe  src="https://www.youtube.com/embed/emy8-tDyB0Y?si=VRTLMybBDj8v0Sn7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/97ozWnsSq0A?si=uNQg-ey_YQwD5myr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <p>
-                Canal: Câmara dos Deputados <br>
-                fonte: <a href="https://youtu.be/emy8-tDyB0Y" target="_blank" rel="noopener noreferrer" class="fonte">Assista no youtube</a>
+                Canal: Tinocando TV <br>
+                fonte: <a href="https://youtu.be/97ozWnsSq0A" target="_blank" rel="noopener noreferrer" class="fonte">Assista no youtube</a>
             </p>
-            </section>
-        </div>
+        </section>
+ </div>
     </main>
     <footer class="rodape">
     <div class="rodape-conteudo">
+
         <div class="rodape-info">
             <h2>Por Trás do Discurso</h2>
             <p>
@@ -61,6 +169,7 @@
                 e transparente para todos.
             </p>
         </div>
+
         <div class="rodape-links">
             <h3>Navegação</h3>
             <a href="index.html">Início</a>
@@ -68,25 +177,28 @@
             <a href="sistema.html">Sistema Político</a>
             <a href="sobre.html">Sobre</a>
         </div>
-    </div>
 
+    </div>
+   
     <div class="rodape-final">
         <p>Projeto educacional • 2026</p>
     </div>
-
-        <nav class="menu">
+    </footer>
+       <nav class="menu">
         <a href="index.html" class="linkmobile">
-            <span><img src="imagem/web-house30x30.png" alt="foto de casa"></span> <br>
+            <span><img src="imagem/web-house30x30.png"alt="foto de casa"></span> <br>
             <span>Inicio</span></a>
-
+            
         <a href="index2.html" class="linkmobile">
-         <span><img src="imagem/pessoa 30x30.png" alt="foto de pessoa"></span> <br>
-         <span>Deputados</span></a>
+            <span><img src="imagem/pessoa 30x30.png" alt="foto de pessoa"></span> <br>
+            <span>Deputados</span></a>
         
         <a href="index3.html" class="linkmobile">
-         <span><img src="imagem/documentos-google 30x30.png" alt="foto de documento"></span> <br>
-         <span>Sobre</span></a>
-        </nav>
+            <span><img src="imagem/documentos-google 30x30.png" alt="foto de documento"></span> <br>
+            <span>Sobre</span>
+        </a>
+    </nav>
+
     <script src="script/script.js"></script>
 </body>
 </html>

@@ -1,166 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Por Tras do Discurso</title>
     <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="index" href="index2.html">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header class="titulo da pagina" >
         <h1>Por Tras do Discurso</h1>
-        <div class="cab">
-        <nav class="pc">
-             <a href="index.html" class="linkpc">Inicio</a>
-            <a href="index4.html" class="linkpc">Sistema Político</a>
-            <a href="index2.html" class="linkpc">Deputados</a>
-            <a href="index3.html" class="linkpc">Sobre</a>
+        <div class="cab"><nav class="pc">
+            <a href="index.html" class="linkpc">Inicio</a>
+            <a href="index2.html" class="linkpc">Sistema Político</a>
+            <a href="index3.html" class="linkpc">Deputados</a>
         </nav>
         <button class="btndark" id="btn-dark" onclick="dark()">
-            <img id="icone" src="../imagem/brilho-do-sol20x20.png" alt="foto do sol"></button>
-        </div>
+            <img id="icone" src="../imagem/brilho-do-sol20x20.png" alt="foto do sol"></button></div>
     </header>
     <main>
-    <div class="orgpa">
-<section>
-    <h1 class="titpr">O que é política?</h1>
+        <div class="orgpa">
+         <section class="candidatos" id="candidatos">
 
-    <p>
-        Muitas pessoas pensam que a política é algo distante da sua realidade. No entanto, ela está presente em praticamente tudo ao nosso redor. A qualidade das escolas, dos hospitais, do transporte público, da segurança e até mesmo do acesso à internet depende de decisões tomadas por representantes eleitos. Por isso, compreender como funciona o sistema político brasileiro é uma forma de entender quem cria as leis, quem administra o país e quem fiscaliza essas ações.
+    <h2>Candidatos</h2>
+
+    <p class="introducao">
+        Vamos agora conhecer mais detalhadamente alguns deputados do estado de São Paulo, explorando suas trajetórias políticas, propostas, principais áreas de atuação e participação nas decisões que influenciam a população paulista
     </p>
 
-    <h2>Como funciona o sistema político brasileiro?</h2>
+    <div class="galeria-deputados">
 
-    <p>
-        O Brasil adota o modelo de República Federativa Presidencialista.
-    </p>
+        
+        <a href="indexrodm.html"
+           class="deputado">
+            <img src="imagem/rodrigo moraes.jpg"
+                 alt="Foto de Rodrigo Moraes">
+            <span>Rodrigo Moraes</span>
+        </a>
 
-    <p>
-        - <strong>República:</strong> o chefe de Estado é escolhido pelo voto da população e permanece no cargo por um período determinado, não existindo uma monarquia hereditária.
-        <br>
-        - <strong>Federativa:</strong> o país é dividido em estados e municípios, que possuem certa autonomia para administrar questões locais.
-        <br>
-        - <strong>Presidencialista:</strong> o Presidente da República é o chefe de 
-        <span class="tooltip" id="estado">
-            Estado
-            <span class="tooltip-text">
-                Representa o Brasil internacionalmente, participa de negociações e mantém relações diplomáticas com outros países.
-            </span>
-        </span>
-        e de 
-        <span class="tooltip" id="governo">
-            Governo
-            <span class="tooltip-text">
-                Administra o país, escolhe ministros e define políticas públicas.
-            </span>
-        </span>,
-        sendo eleito diretamente pelo povo para um mandato de quatro anos, com possibilidade de uma reeleição por mais quatro anos.
-    </p>
+        
+        <a href="deputados/delegado-olim.html"
+           class="deputado">
+            <img src="imagem/delegado olim.jpg"
+                 alt="Foto de Delegado Olim">
+            <span>Delegado Olim</span>
+        </a>
 
-    <h2>A divisão dos poderes</h2>
 
-    <p>
-        Para evitar a concentração de poder em apenas uma pessoa ou instituição, o filósofo Charles de Montesquieu propôs a divisão dos poderes do Estado. No Brasil, existem três poderes que atuam de forma independente e equilibrada:
-    </p>
+        <a href="deputados/marco-damasio.html"
+           class="deputado">
+            <img src="imagem/marco damasio.jpg"
+                 alt="Foto de Marco Damasio">
+            <span>Marco Damasio</span>
+        </a>
 
-    <ul class="poder">
+        <a href="deputados/jorge-wilson.html"
+           class="deputado">
+            <img src="imagem/Jorge wilson.jpg"
+                 alt="Foto de Jorge Wilson">
+            <span>Jorge Wilson</span>
+        </a>
 
-        <li>
-            <strong>Poder Executivo</strong>
+        <a href="deputados/paula-bancada-feminista.html"
+           class="deputado">
+            <img src="imagem/paula bancada feminista.jpg"
+                 alt="Foto de Paula Bancada Feminista">
+            <span>Paula Bancada Feminista</span>
+        </a>
 
-            <p>
-                Sua função principal é administrar o país e gerir as políticas públicas, aplicando as leis criadas pelo Legislativo na prática do dia a dia.
-            </p>
+        <a href="deputados/ana-carolina.html"
+           class="deputado">
+            <img src="imagem/ana carolina.jpg"
+                 alt="Foto de Ana Carolina">
+            <span>Ana Carolina</span>
+        </a>
 
-            <p>
-                O Poder Executivo varia de acordo com a esfera de governo. Na União, é chefiado pelo Presidente da República; nos estados, pelos Governadores; e nos municípios, pelos Prefeitos.
-            </p>
+        <a href="deputados/eduardo-suplicy.html"
+           class="deputado">
+            <img src="imagem/eduardo suplicy.jpg"
+                 alt="Foto de Eduardo Suplicy">
+            <span>Eduardo Suplicy</span>
+        </a>
 
-            <p><strong>Função típica:</strong></p>
+        <a href="deputados/carlos-giannazi.html"
+           class="deputado">
+            <img src="imagem/carlos giannazi.jpg"
+                 alt="Foto de Carlos Giannazi">
+            <span>Carlos Giannazi</span>
+        </a>
 
-            <ul class="funções">
-                <li>Coletar impostos e gerir o orçamento público.</li>
-                <li>Executar políticas sociais e de infraestrutura, como construir escolas, manter hospitais e gerenciar a segurança pública.</li>
-                <li>Representar o país nas relações internacionais.</li>
-            </ul>
-
-            <p>
-                <strong>Mecanismos de controle (Checks and Balances):</strong>
-                o Executivo possui, entre suas atribuições, a possibilidade de vetar projetos de lei aprovados pelo Congresso Nacional, nos termos previstos pela Constituição.
-            </p>
-        </li>
-
-        <li>
-            <strong>Poder Legislativo</strong>
-
-            <p class="podertext">
-                O Poder Legislativo é exercido pelo Congresso Nacional, que é composto pela Câmara dos Deputados e pelo Senado Federal. Por ser formado por duas casas, o Congresso possui uma estrutura bicameral. Entre suas principais funções estão legislar e fiscalizar.
-            </p>
-
-            <p><strong>Funções típicas:</strong></p>
-
-            <ul class="funções">
-
-                <li>
-                    <strong>Função de legislar:</strong>
-                    consiste na elaboração e aprovação de leis e normas para a organização do país.
-                </li>
-
-                <li>
-                    <strong>Função de fiscalizar:</strong>
-                    o Congresso Nacional possui a competência de fiscalizar e controlar os atos do Poder Executivo. Além disso, realiza a fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta. No cumprimento dessa função, o Congresso Nacional conta também com o apoio do Tribunal de Contas da União.
-                </li>
-
-            </ul>
-        </li>
-
-        <li>
-            <strong>Poder Judiciário</strong>
-
-            <p>
-                O Supremo Tribunal Federal (STF) é o órgão de cúpula do Poder Judiciário e tem como principal função garantir o cumprimento da Constituição Federal. É formado por 11 ministros, indicados pelo Presidente da República e aprovados pela maioria absoluta do Senado. Os ministros devem ser brasileiros natos, ter entre 35 e 70 anos e possuir notável saber jurídico e reputação ilibada.
-            </p>
-
-            <p><strong>Função típica (jurisdicional):</strong></p>
-
-            <ul class="funções">
-
-                <li>
-                    Resolver disputas entre cidadãos, entre cidadãos e o Estado e entre os próprios órgãos do Estado.
-                </li>
-
-                <li>
-                    Garantir o cumprimento dos direitos fundamentais previstos na Constituição.
-                </li>
-
-                <li>
-                    Realizar o controle de constitucionalidade, verificando se as leis criadas pelo Congresso ou os atos editados pelo Executivo respeitam a Constituição Federal.
-                </li>
-
-                <li>
-                    <strong>Independência:</strong>
-                    os juízes possuem garantias constitucionais, como a vitaliciedade, para exercer suas funções com independência e imparcialidade.
-                </li>
-
-            </ul>
-        </li>
-    </ul>
-    </section> 
-     <section class="video-politico">
-                <h2>Explicação e Funcionamento da Constituição Federal</h2>
-                <div class="video-container">
-            <iframe  src="https://www.youtube.com/embed/97ozWnsSq0A?si=uNQg-ey_YQwD5myr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p>
-                Canal: Tinocando TV <br>
-                fonte: <a href="https://youtu.be/97ozWnsSq0A" target="_blank" rel="noopener noreferrer" class="fonte">Assista no youtube</a>
-            </p>
-        </section>
- </div>
+    </div>
+</section>
+        </div>
     </main>
-    <footer class="rodape">
+      <footer class="rodape">
     <div class="rodape-conteudo">
 
         <div class="rodape-info">
@@ -184,7 +117,8 @@
     <div class="rodape-final">
         <p>Projeto educacional • 2026</p>
     </div>
-       <nav class="menu">
+</footer>
+ <nav class="menu">
         <a href="index.html" class="linkmobile">
             <span><img src="imagem/web-house30x30.png"alt="foto de casa"></span> <br>
             <span>Inicio</span></a>
