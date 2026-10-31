@@ -106,19 +106,24 @@ ul{
     padding: 0;
 }
 .noticias{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
-    margin-top: 30px;
 }
 .noticias img{
-    width: 400px;
+    width: 48%;
     height: 210px;
     object-fit: cover;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 .noticia{
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     gap: 20px;
+    min-width: 0;
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
     text-decoration: none;
@@ -129,6 +134,7 @@ ul{
     flex-direction: column;
     align-items: flex-start;
     flex: 1;
+    min-width: 0;
 }
 .textnoticia h3 {
     margin: 0 0 10px 0;
@@ -137,11 +143,32 @@ ul{
     color: var(--cor-principal);
 }
 .textnoticia p {
+    overflow-wrap: break-word;
     margin: 0 0 15px 0;
     font-size: 22px;
     text-align: left;
     font-family: var(--font-alfa);
     color: var(--cor-texto);
+}
+@media (max-width: 768px) {
+    .noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .noticia img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .textonoticia {
+        width: 100%;
+    }
 }
 .tooltip {
     position: relative;
@@ -543,4 +570,45 @@ main{
     .conteudo-pesquisa {
         padding: 14px;
     }
+}
+@media (max-width: 500px) {
+
+    .candidatos {
+        padding: 12px;
+    }
+
+    .galeria-deputados {
+        gap: 18px;
+    }
+
+    .deputado {
+        width: 105px;
+    }
+
+    .deputado img {
+        height: 105px;
+    }
+
+    .deputado span {
+        font-size: 12px;
+    }
+
+    .conteudo-pesquisa {
+        padding: 14px;
+    }
+}
+.foto-candidato {
+    width: 220px;
+    height: 294px;
+    object-fit: cover;
+}
+.perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
 }
