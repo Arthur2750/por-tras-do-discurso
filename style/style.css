@@ -612,3 +612,43 @@ main{
     flex-direction: column;
     padding: 30px;
 }
+@media (max-width: 768px) {
+
+    .perfil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .foto-candidato {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .informacoes {
+        width: 100%;
+        max-width: 350px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .informacoes p {
+        margin: 10px 0;
+        overflow-wrap: break-word;
+    }
+
+    .candidatos {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .candidatos h1 {
+        font-size: 32px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+}
