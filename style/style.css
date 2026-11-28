@@ -183,7 +183,7 @@ ul{
     position: absolute;
     bottom: 130%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
 
     width: max-content;
     max-width: 80vw;
